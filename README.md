@@ -9,8 +9,8 @@ Sakila databases is a sample database in MSQL that allows beginners to practice,
 
 select * from film where rental_rate > 2.99;
 
-*Find the total number of films in each category, ordered from highest to  lowest*
+*2. Find the total number of films in each category, ordered from highest to lowest*
 
-select name, category_id, count(film_id)  as total_high from film_category join category using (category_id) group by name, category_id order by total_high desc;
+select name, category_id, count(film_id) as total_high from film_category join category using (category_id) group by name, category_id order by total_high desc;
 
 
